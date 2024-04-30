@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title> 
+        {% block title %}
+            Blog 
+        {% endblock %} 
+    </title>
+
+    <!--bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  
+</head>
+  <body>
+
+    <!-- div class="container" -->
+
+    <nav class="navbar navbar-light" style="background-color: #aedfac;">
+
+      <div class="container-fluid">
+        <span class="navbar-text" >
+          Contactanos al numero +569 83189234
+        </span>
+      </div>
+    </nav>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fdfcec;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=" {% url 'home' %} "> 
+            <!-- img class="d-inline-block align-text-center" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Logo" width="46" height="40" --> 
+            <img class="d-inline-block align-text-center" src="{% static 'logo-a.png' %}" alt="Logo" width="46" height="40"> 
+            Cooperativa en Fungicultura 
+          </a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse " id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto">
+
+              <!-- NAV BAR ANTERIOR -->
+            <!--ul class="navbar-nav me-auto mb-2 mb-lg-0"-->
+              <!-- li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li -->
+              <!-- {% if user.is_authenticated %} -->
+                <!--li class="nav-item">
+                  <a class="nav-link" href="{% url 'add_post'%}">Add Post</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'add_category'%}">Add Category</a>
+                </li
+
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+                </li -->
+              <!-- {% else %} -->
+                
+
+              <!-- li class="nav-item">
+                <a class="nav-link" href="{% url 'register'%}">Register</a>
+              </li -->
+
+              <!-- li class="nav-item">
+                <a class="nav-link" href="{% url 'login'%}">Login</a>
+              </li -->
+
+              <!-- {% endif %} -->
+
+              <!-- li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li -->
+
+              <!--li class="nav-item">
+                <a class="nav-link" href="{% url 'home'%}">Inicio</a>
+              </li-->
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/cooperativahongos" class="nav-link">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a href="#QuienesSomos" class="nav-link">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Servicios" class="nav-link">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Preguntas" class="nav-link">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login'%}">
+                  Login
+                  <i class="bi bi-person-square"></i>
+                </a>
+              </li>
+              <!--li class="nav-item">
+                <a href="#instructors" class="nav-link">Experiencias</a>
+              </li-->
+              <!-- ul class="navbar-nav navbar-right">
+                <i class="bi bi-laptop"></i>
+                <li><a href="#"><i class="bi bi-laptop"></i> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul -->
+              <!-- {% if user.is_authenticated %} -->
+                <!--li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+                </li-->
+              <!-- {% else %} -->
+              
+              <!--{% endif %}-->
+            </ul>
+
+            <!-- Search Button -->
+            <!-- form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form -->
+          </div>
+        </div>
+      </nav>
+  <!-- /div -->
+    <!--NAV BAR-->
+
+    <br/>
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <!-- Btn Wasap Flotante-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <a href="https://api.whatsapp.com/send?phone=56983189234&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    
+    <!-- Btn Wasap Flotante-->
+
+    <!--Botstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+    <!-- Footer -->
+    <footer class="p-5 text-center position-relative" style="background-color: #fdfcec;">
+      <div class="container">
+        <p class="lead">Copyright &copy; -  2024 Cooperativa en Fungicultura ®</p>
+
+        <!--a href="#" class="position-absolute bottom-0 end-0 p-1">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a-->
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+/*Imagen Parallax Header */
+.parallax-header{
+    background: #000;
+    /*background: linear-gradient(
+        rgba(0,0,0,0.3)
+        rgba(0,0,0,0.8)
+    ),*/
+    background: url(../Granja.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content{
+    padding: 100px 0 250px 0;
+}
+
+/* Imagen Paralax footer */
+
+/*Imagen Parallax */
+.parallax-footer{
+  background: #000;
+  /*background: linear-gradient(
+      rgba(0,0,0,0.3)
+      rgba(0,0,0,0.8)
+  ),*/
+  background: url(../champinon_original_resize.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-content-footer{
+  padding: 100px 0 400px 0;
+}
+
+/* Btn Wasap Flotante */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
