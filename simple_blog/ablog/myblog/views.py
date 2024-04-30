@@ -13,7 +13,7 @@ from .forms import PostForm, EditForm
 
 class HomeView(CreateView):
     model = Category
-    template_name = 'ztutorial_paralax.html'
+    template_name = 'cooperativa_home.html'
     #template_name = 'paralax_example.html'
     fields = '__all__'
 
