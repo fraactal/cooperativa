@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-3z*ll0+62swo^_ksopsw-l+5tq-=^+xo4=z7jspm^aadm=uzwc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','migatito.cl']
+ALLOWED_HOSTS = ['0.0.0.0','migatito.cl','www.migatito.cl']
 #app.run(host='0.0.0.0', port=port)
 
 
