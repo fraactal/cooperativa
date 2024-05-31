@@ -17,6 +17,12 @@ class HomeView(CreateView):
     #template_name = 'paralax_example.html'
     fields = '__all__'
 
+class ContactView(CreateView):
+    model = Category
+    template_name = 'contacto.html'
+    #template_name = 'paralax_example.html'
+    fields = '__all__'
+
 #class HomeView(ListView):
 #    model = Post
 #    template_name = 'home.html'
